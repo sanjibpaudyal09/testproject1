@@ -31,6 +31,7 @@ public class NewTest {
 	 }
 	 
 	  driver.manage().window().maximize();
+	  driver.get("https://www.freecrm.com");
 	  try {
 		Thread.sleep(3000);
 	} catch (InterruptedException e) {

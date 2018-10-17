@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Testfirefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="DataDriven.readWriteExcle">
+      <class name="crossBrowser.NewTest">
         <methods>
-          <include name="terminate"/>
-          <include name="beforeTest"/>
-          <include name="login" invocation-numbers="1 2"/>
-          <include name="backHomePage"/>
-          <include name="verifyHomePage"/>
+          <include name="verifyHome" invocation-numbers="0"/>
         </methods>
-      </class> <!-- DataDriven.readWriteExcle -->
+      </class> <!-- crossBrowser.NewTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Testfirefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

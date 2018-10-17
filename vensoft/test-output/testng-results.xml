@@ -1,169 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22174" started-at="2018-08-16T23:41:56Z" finished-at="2018-08-16T23:42:18Z">
+  <suite name="Suite" duration-ms="13386" started-at="2018-10-10T19:12:07Z" finished-at="2018-10-10T19:12:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22174" started-at="2018-08-16T23:41:56Z" finished-at="2018-08-16T23:42:18Z">
-      <class name="DataDriven.readWriteExcle">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:DataDriven.readWriteExcle@7cd62f43]" name="beforeTest" is-config="true" duration-ms="4818" started-at="2018-08-16T23:41:56Z" finished-at="2018-08-16T23:42:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="verifyHomePage()[pri:0, instance:DataDriven.readWriteExcle@7cd62f43]" name="verifyHomePage" is-config="true" duration-ms="13" started-at="2018-08-16T23:42:02Z" finished-at="2018-08-16T23:42:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePage -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:DataDriven.readWriteExcle@7cd62f43]" name="login" duration-ms="5889" started-at="2018-08-16T23:42:02Z" data-provider="loginData" finished-at="2018-08-16T23:42:08Z">
+    <test name="Test" duration-ms="9850" started-at="2018-10-10T19:12:07Z" finished-at="2018-10-10T19:12:17Z">
+      <class name="crossBrowser.NewTest">
+        <test-method status="PASS" signature="verifyHome(java.lang.String)[pri:0, instance:crossBrowser.NewTest@3532ec19]" name="verifyHome" duration-ms="9825" started-at="2018-10-10T19:12:07Z" finished-at="2018-10-10T19:12:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tutorial]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[tutorial]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="backHomePage()[pri:0, instance:DataDriven.readWriteExcle@7cd62f43]" name="backHomePage" is-config="true" duration-ms="506" started-at="2018-08-16T23:42:08Z" finished-at="2018-08-16T23:42:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- backHomePage -->
-        <test-method status="PASS" signature="verifyHomePage()[pri:0, instance:DataDriven.readWriteExcle@7cd62f43]" name="verifyHomePage" is-config="true" duration-ms="10" started-at="2018-08-16T23:42:08Z" finished-at="2018-08-16T23:42:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePage -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:DataDriven.readWriteExcle@7cd62f43]" name="login" duration-ms="3590" started-at="2018-08-16T23:42:08Z" data-provider="loginData" finished-at="2018-08-16T23:42:12Z">
+        </test-method> <!-- verifyHome -->
+      </class> <!-- crossBrowser.NewTest -->
+    </test> <!-- Test -->
+    <test name="Testfirefox" duration-ms="13386" started-at="2018-10-10T19:12:07Z" finished-at="2018-10-10T19:12:20Z">
+      <class name="crossBrowser.NewTest">
+        <test-method status="PASS" signature="verifyHome(java.lang.String)[pri:0, instance:crossBrowser.NewTest@464bee09]" name="verifyHome" duration-ms="13362" started-at="2018-10-10T19:12:07Z" finished-at="2018-10-10T19:12:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[abcdes]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ajnjnja]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[not valid data expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: not valid data expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at DataDriven.readWriteExcle.login(readWriteExcle.java:83)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="backHomePage()[pri:0, instance:DataDriven.readWriteExcle@7cd62f43]" name="backHomePage" is-config="true" duration-ms="435" started-at="2018-08-16T23:42:12Z" finished-at="2018-08-16T23:42:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- backHomePage -->
-        <test-method status="PASS" signature="verifyHomePage()[pri:0, instance:DataDriven.readWriteExcle@7cd62f43]" name="verifyHomePage" is-config="true" duration-ms="12" started-at="2018-08-16T23:42:12Z" finished-at="2018-08-16T23:42:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePage -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:DataDriven.readWriteExcle@7cd62f43]" name="login" duration-ms="4577" started-at="2018-08-16T23:42:12Z" data-provider="loginData" finished-at="2018-08-16T23:42:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[not valid data expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: not valid data expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at DataDriven.readWriteExcle.login(readWriteExcle.java:83)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="backHomePage()[pri:0, instance:DataDriven.readWriteExcle@7cd62f43]" name="backHomePage" is-config="true" duration-ms="1251" started-at="2018-08-16T23:42:17Z" finished-at="2018-08-16T23:42:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- backHomePage -->
-        <test-method status="PASS" signature="terminate()[pri:0, instance:DataDriven.readWriteExcle@7cd62f43]" name="terminate" is-config="true" duration-ms="224" started-at="2018-08-16T23:42:18Z" finished-at="2018-08-16T23:42:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- terminate -->
-      </class> <!-- DataDriven.readWriteExcle -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- verifyHome -->
+      </class> <!-- crossBrowser.NewTest -->
+    </test> <!-- Testfirefox -->
+  </suite> <!-- Suite -->
 </testng-results>

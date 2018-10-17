@@ -3,15 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DataDriven.readWriteExcle">
+      <class name="crossBrowser.NewTest">
         <methods>
-          <include name="terminate"/>
-          <include name="beforeTest"/>
-          <include name="login" invocation-numbers="1 2"/>
-          <include name="backHomePage"/>
-          <include name="verifyHomePage"/>
+          <include name="verifyHome"/>
         </methods>
-      </class> <!-- DataDriven.readWriteExcle -->
+      </class> <!-- crossBrowser.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

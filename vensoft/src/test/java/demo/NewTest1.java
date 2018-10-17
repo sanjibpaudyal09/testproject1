@@ -37,6 +37,7 @@ public class NewTest1 {
   public void registerForNew() {
 	  System.out.println("register");
 	  driver.findElement(By.linkText("REGISTER")).click(); 
+	  
 	  String expectedTitle="Register: Mercury Tours";
 		 String actualTitle=driver.getTitle();
 		 Assert.assertEquals(actualTitle, expectedTitle);
@@ -46,7 +47,7 @@ public class NewTest1 {
 	  public void logIn() {
 	  System.out.println("login");
 		  driver.findElement(By.xpath("//input[@name='userName']")).sendKeys("tutorial");
-			driver.findElement(By.name("password")).sendKeys("tutoria");
+			driver.findElement(By.name("password")).sendKeys("tutorial");
 			driver.findElement(By.name("login")).click();
 			String expectedTitle = "Find a Flight: Mercury Tours:";
 			 String actualTitle = driver.getTitle();
