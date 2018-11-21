@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="crossBrowser.NewTest">
+      <class name="DataDriven.ExcelDataDriven">
         <methods>
-          <include name="verifyHome"/>
+          <include name="backHomePage"/>
+          <include name="login"/>
+          <include name="terminate"/>
+          <include name="beforeTest"/>
+          <include name="verifyHomePage"/>
         </methods>
-      </class> <!-- crossBrowser.NewTest -->
+      </class> <!-- DataDriven.ExcelDataDriven -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

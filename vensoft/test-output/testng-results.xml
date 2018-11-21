@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="13386" started-at="2018-10-10T19:12:07Z" finished-at="2018-10-10T19:12:20Z">
+  <suite name="Suite" duration-ms="17330" started-at="2018-11-20T23:31:19Z" finished-at="2018-11-20T23:31:36Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="9850" started-at="2018-10-10T19:12:07Z" finished-at="2018-10-10T19:12:17Z">
+    <test name="Test" duration-ms="10144" started-at="2018-11-20T23:31:19Z" finished-at="2018-11-20T23:31:29Z">
       <class name="crossBrowser.NewTest">
-        <test-method status="PASS" signature="verifyHome(java.lang.String)[pri:0, instance:crossBrowser.NewTest@3532ec19]" name="verifyHome" duration-ms="9825" started-at="2018-10-10T19:12:07Z" finished-at="2018-10-10T19:12:17Z">
+        <test-method status="PASS" signature="verifyHome(java.lang.String)[pri:0, instance:crossBrowser.NewTest@3532ec19]" name="verifyHome" duration-ms="10090" started-at="2018-11-20T23:31:19Z" finished-at="2018-11-20T23:31:29Z">
           <params>
             <param index="0">
               <value>
@@ -20,9 +20,9 @@
         </test-method> <!-- verifyHome -->
       </class> <!-- crossBrowser.NewTest -->
     </test> <!-- Test -->
-    <test name="Testfirefox" duration-ms="13386" started-at="2018-10-10T19:12:07Z" finished-at="2018-10-10T19:12:20Z">
+    <test name="Testfirefox" duration-ms="17330" started-at="2018-11-20T23:31:19Z" finished-at="2018-11-20T23:31:36Z">
       <class name="crossBrowser.NewTest">
-        <test-method status="PASS" signature="verifyHome(java.lang.String)[pri:0, instance:crossBrowser.NewTest@464bee09]" name="verifyHome" duration-ms="13362" started-at="2018-10-10T19:12:07Z" finished-at="2018-10-10T19:12:20Z">
+        <test-method status="PASS" signature="verifyHome(java.lang.String)[pri:0, instance:crossBrowser.NewTest@464bee09]" name="verifyHome" duration-ms="17276" started-at="2018-11-20T23:31:19Z" finished-at="2018-11-20T23:31:36Z">
           <params>
             <param index="0">
               <value>

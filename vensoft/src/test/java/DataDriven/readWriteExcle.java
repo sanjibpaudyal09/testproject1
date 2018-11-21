@@ -102,7 +102,7 @@ public class readWriteExcle {
 	  int rows=de.getRowCount(0);
     Object[][] data = new Object[rows][2];
     
-    for(int i=0;i<rows;i++) {
+    for(int i=1;i<rows;i++) {
       data[i][0]=de.getData(0, i+1, 0);
       data[i][1]=de.getData(0, i+1, 1);
       

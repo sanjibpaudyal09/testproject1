@@ -41,19 +41,12 @@ public class DataExcel {
 		File file1 =    new File("path");
 		FileInputStream inputStream1 = new FileInputStream(file1);
 		Workbook w=new XSSFWorkbook(inputStream1);
-	
-		 w.getSheetAt(sheet).getRow(row).createCell(col).setCellValue(actual);
+	     w.getSheetAt(sheet).getRow(row).createCell(col).setCellValue(actual);
 		 FileOutputStream output = new FileOutputStream(file1);
 			w.write(output);
-			
-		}catch(Exception e) {
-			
+			}catch(Exception e) {
+			}
 		}
-		
-		
-		
-		}
-	
 	public int getRowCount(int sheetIndex) {
 		
 		return (wb.getSheetAt(sheetIndex).getLastRowNum());
